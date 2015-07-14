@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Basic fotorama</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+
+  <!-- jQuery -->
+  <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+
+  <!-- Fotorama -->
+  <link href="fotorama.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+  <script src="fotorama.dev.js"></script>
+
+  <!-- Just don’t want to repeat this prefix in every img[src] -->
+  <!--<base href="http://s.fotorama.io/okonechnikov/">-->
+</head>
+
+<body>
+<div class="fotorama-wrapper">
+  <div class="fotorama-item">
+    <div class="fotorama__wrap fotorama__wrap--css3 fotorama__wrap--slide fotorama__wrap--toggle-arrows">
+      <div class="fotorama__stage">
+        <div class="fotorama__stage__shaft">
+        </div>
+        <div class="fotorama__arr fotorama__arr--prev" tabindex="0" role="button">
+          <div class="fotorama__arr__arr"></div>
+        </div>
+        <div class="fotorama__arr fotorama__arr--next fotorama__arr--disabled" tabindex="-1" role="button">
+          <div class="fotorama__arr__arr"></div>
+        </div>
+        <div class="fotorama__video-close"></div>
+      </div>
+      <div class="fotorama__nav-wrap">
+        <div class="fotorama__nav fotorama__nav--thumbs">
+          <div class="fotorama__fullscreen-icon" tabindex="0" role="button"></div>
+          <div class="fotorama__nav__shaft">
+            <div class="fotorama__thumb-border"></div> <!--highlight active item(also work when use TAB for select any item) -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  var fotorama = {
+    data: [
+      {
+        img: 'preview_number_one.jpg',
+        thumb: 'preview_number_one.jpg',
+        caption: 'T-Shirt Women side',
+        video: "https://www.youtube.com/watch?v=ELeOApMXJNY"
+      },
+      {
+        img: 'preview_number_one.jpg',
+        thumb: 'preview_number_one.jpg',
+        caption: 'T-Shirt Women side'
+      },
+      {
+        img: 'preview_number_one.jpg',
+        thumb: 'preview_number_one.jpg',
+        caption: 'T-Shirt Women side'
+      },
+      {
+        img: 'preview_number_one.jpg',
+        thumb: 'preview_number_one.jpg',
+        caption: 'T-Shirt Women side'
+      },
+      {
+        img: 'preview_number_one.jpg',
+        thumb: 'preview_number_one.jpg',
+        caption: 'T-Shirt Women side'
+      },
+      {
+        img: 'preview_number_one.jpg',
+        thumb: 'preview_number_one.jpg',
+        caption: 'T-Shirt Women side'
+      },
+      {
+        img: 'preview_number_one.jpg',
+        thumb: 'preview_number_one.jpg',
+        caption: 'T-Shirt Women side'
+      },
+      {
+        img: 'preview_number_one.jpg',
+        thumb: 'preview_number_one.jpg',
+        caption: 'T-Shirt Women side'
+      },
+      {
+        img: 'preview_number_one.jpg',
+        thumb: 'preview_number_one.jpg',
+        caption: 'T-Shirt Women side'
+      },
+      {
+        img: 'preview_number_one.jpg',
+        thumb: 'preview_number_one.jpg',
+        caption: 'T-Shirt Women side'
+      },
+      {
+        img: '1.jpg',
+        thumb: '1t.jpg',
+        caption: '123'
+      },
+      {
+        img: '1.jpg',
+        thumb: '1t.jpg',
+        caption: '123'
+      },
+      {
+        img: '3.jpg',
+        thumb: '3.jpg',
+        caption: '123'
+      },
+      {
+        img: '3.jpg',
+        thumb: '3.jpg',
+        caption: '123'
+      },
+      {
+        img: '3.jpg',
+        thumb: '3.jpg',
+        caption: 'last'
+      }
+    ],
+    nav: "thumbs",
+    loop: false,
+    keyboard: true,
+    allowfullscreen: true,
+    thumbheight: 90,
+    thumbwidth: 90
+  };
+  $('.fotorama-item').fotorama(fotorama);
+</script>
+</body>
+</html>
