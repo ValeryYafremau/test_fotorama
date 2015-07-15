@@ -44,6 +44,8 @@
   </div>
 </div>
 <script>
+  var arrows = !('ontouchstart' in document.documentElement);
+
   var fotorama = {
     data: [
       {
@@ -75,7 +77,8 @@
     nav: false,
     loop: true,
     thumbheight: 90,
-    thumbwidth: 90
+    thumbwidth: 90,
+    arrows: arrows
   };
   $('.fotorama-item').fotorama(fotorama);
 </script>
